@@ -5,4 +5,4 @@ Phase 1:
 Implement a simple todo app.
 
 Phase 2:
-Make lists sharable and allow simultaneously live editing.
+Make lists sharable and allow live editing.
