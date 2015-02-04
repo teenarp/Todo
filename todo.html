@@ -1,21 +1,23 @@
 <html>
-  <style>
-    .completed{
-      text-decoration: line-through;
-    }
-  </style>
+  <head>
+    <link type="text/css" rel="stylesheet" href="app/partials/partials-styles/todo.css">
+  </head>
   <body ng-app="todo">
-    <div ng-controller="todoController">
-      <h3>TODO
-        <select ng-model="tagFilter" ng-options="tag for tag in tasks.tags">
-        </select>
-      </h3>
-      <ul>
-        <li><input type="text" ng-model="task" placeholder="what to do?"><input type="text" ng-model="tags" placeholder="tag1, tag2, .."/> | <button ng-click="addTask(initializeTask(task, tags)); task=null; tags=null"> + </button></li>
-        <li ng-repeat="task in tasks | filter: tagFilter  | orderBy:-$index" ng-class="{'completed': task.done}"><input type="checkbox" ng-model="task.done">{{task.title}} | {{task.tags}}</li>
-      </ul>
+    <div>
+      <h3>Todo</h3>
+      <div todo class="todo-pane">
+      </div>
+
+    <div todo class="todo-pane">
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular.min.js"></script>
+
+    <div todo class="todo-pane">
+    </div>
+        <!--<div class="todo-control-pane">
+            <select ng-model="tagFilter.tag" ng-options="tag for tag in tasks.tags"></select>
+        </div>-->
+    </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.11/angular.min.js"></script>
     <script src="app/todo.js"></script>
   </body>
 </html>

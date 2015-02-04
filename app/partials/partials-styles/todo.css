@@ -1,0 +1,111 @@
+﻿body{
+}
+
+ul{
+list-style: none;
+}
+
+.todo-widget{
+    width: 300px;
+    padding: 5px 10px;
+    height: auto;
+    border: 0px;
+    margin-bottom: 10px ;
+    display:inline-block;
+    -webkit-box-shadow: 2px 2px 1px 0px #666666;
+    box-shadow: 2px 2px 1px 0px #666666;
+    opacity:0.8;
+}
+
+.todo-widget:hover{
+    opacity:1.0;
+}
+
+.todo-font{
+    font-family:'Segoe UI Light'
+}
+
+.task-list{
+    overflow:auto;
+    max-height:350px;
+}
+
+.font-large{
+    font-size:large;
+}
+
+
+.font-med{
+    font-size:medium;
+}
+
+
+.font-small{
+    font-size:small;
+}
+
+.panel{
+    position: relative;
+    display: block; 
+    padding-bottom:5px;
+}
+
+.btn-med{
+    border-radius:50%;
+    height:25px;
+    width:25px;
+    border:0px;
+    font-size:medium;
+    background-color:rgba(99,99,99,0.4);
+    cursor:pointer;
+}
+.btn-small{
+    border-radius:50%;
+    height:17px;
+    width:17px;
+    font-size:x-small;
+    border:0px;
+    background-color:rgba(99,99,99,0.4);
+    cursor:pointer;
+    margin:0px 3px 0px 3px;
+}
+
+
+input.scribble{
+    background-color:transparent;
+    border: solid 0px transparent;
+    width:auto;
+    font-family:inherit;
+
+}
+input.bottom-line{
+    border-bottom: solid 1px #666666;
+}
+
+
+.task-tag-list .scribble{
+    width:70px;
+}
+
+
+.tag-bubble{
+    border-radius:10px;
+    height:20px;
+    width:auto;
+    border:0px;
+    display:inline-block;
+    background-color:rgba(150,150,150,0.2);
+    padding:0px 2px 3px 6px;
+    margin:0px 5px 5px 0px;
+}
+
+.task-title{
+    border: 0px;
+    padding-bottom: 5px;    
+    display:inline-block;
+}
+
+.task-title .completed{
+    text-decoration: line-through;
+}
+

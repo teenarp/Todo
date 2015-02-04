@@ -1,0 +1,25 @@
+<div class="todo-widget todo-font" ng-attr-style="background-color:{{ listColor }}">
+    <!--<ul> {{ tasks }}</ul>
+    <p>{{getTags()}}</p>-->
+    <div class="panel">
+        <input class="scribble font-large" ng-model="title" placeholder="List Title..." />
+    </div>
+    <div class="add-task panel">
+        <input type="text" class="scribble bottom-line" ng-model="task" placeholder="remember to..">
+        <button class="btn-med" ng-click="addTask(task)"> + </button>
+    </div>
+    <div class="task-list panel">
+        <div task class="task-row" ng-repeat="task in tasks">
+            <div class="task-title">
+                <input type="checkbox" ng-model="task.done" />
+                <input type="text" class="scribble" ng-model="task.title" ng-class="{ 'completed':task.done }" placeholder="remember to.." />
+            </div>
+            <div class="task-tag-list">
+                <span ng-repeat="tag in task.tags" class="tag-bubble font-small">
+                    {{ tag }}<button ng-click="delTags(tag)" class="btn-small">-</button>
+                </span>
+                <input ng-model="tag" class="scribble font-small bottom-line" type="text" placeholder="add a tag" />
+                <button ng-click="addTags(tag)" class="btn-small">+</button>
+            </div>
+        </div>
+    </div>
