@@ -1,4 +1,4 @@
-var app = angular.module('todo', []);
+
 //app.module('todo.todoDirective',[]);
 
 app.directive('todo', function () {

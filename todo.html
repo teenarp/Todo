@@ -1,23 +1,20 @@
 <html>
   <head>
+      <title>Todo directive demo</title>
     <link type="text/css" rel="stylesheet" href="app/partials/partials-styles/todo.css">
   </head>
   <body ng-app="todo">
-    <div>
-      <h3>Todo</h3>
-      <div todo class="todo-pane">
+      <div ng-controller="todoController">
+          <h3>Todos demo</h3>
+          <button ng-click="addTodo()">Add list</button>
+          <br/>
+          <hr/>
+          <div id="todo-here">
+
+          </div>
       </div>
-
-    <div todo class="todo-pane">
-    </div>
-
-    <div todo class="todo-pane">
-    </div>
-        <!--<div class="todo-control-pane">
-            <select ng-model="tagFilter.tag" ng-options="tag for tag in tasks.tags"></select>
-        </div>-->
-    </div>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.11/angular.min.js"></script>
+      <script src="app.js"></script>
     <script src="app/todo.js"></script>
   </body>
 </html>
